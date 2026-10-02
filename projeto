@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Sorteio!</h1>
+      <button onclick="sorteio()">sortear um número</button>
+      <h2 id="resultado"> </h2>
+      <script src="script.js"></script>
+  </body>
+</html>
+unction sorteio(){
+  let numero = Math.random() * 10;
+
+  document.getElementById("resultado").innerText =
+  "Numero sorteado: " + numero;
+}
